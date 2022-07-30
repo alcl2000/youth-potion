@@ -4,6 +4,8 @@ body {
     width: 100%;
     height: 100vh;
 } 
-/*body{
-    background-color:black;
-}*/
+.text{
+    background-color: rgba(248, 248, 249, 0.76);
+    padding: 10px, 0;
+    width: fit-content;
+}
