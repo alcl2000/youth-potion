@@ -3,9 +3,21 @@ body {
     background-size: cover;
     width: 100%;
     height: 100vh;
+    margin: 0;
 } 
 .text{
     background-color: rgba(248, 248, 249, 0.76);
     padding: 10px, 0;
     width: fit-content;
 }
+.hero-image {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+
+    background: 
+    rgb(83, 83, 83)
+    url(../images/vitae-bottle.jpg)
+    center / cover;
+}
+
