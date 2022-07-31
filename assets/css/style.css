@@ -1,24 +1,79 @@
 body {
-    background: url("../images/paper.jpg") no-repeat center center fixed;
+    /*background: url("../images/paper.jpg") no-repeat center center fixed;*/
     background-size: cover;
     width: 100%;
     height: 100%;
     margin: 0;
 } 
+
+.content {
+    margin: 0 auto;
+    padding: 2em;
+}
+
 .text{
     background-color: rgba(248, 248, 249, 0.76);
     padding: 10px, 0;
     width: fit-content;
+    font-size: 1.3em;
 }
-.hero-image {
+
+.text::first-letter {
+    font-size: 1.8em;
+    font-family: 'Edwardian Script ITC', serif;
+    font-weight: 550;
+    padding-right: .2em;
+}
+
+#quote {
+    width: 30%;
+    font-size: 2em;
+    border-left: 2px solid grey;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: 10px;
+}
+
+header {
     width: 100%;
     height: 600px;
     margin: 0;
+    overflow: hidden;
+}
 
+.hero-image {
+
+    --position: bottom left;
+    width:100%;
+    height: 100%;
     background: 
     rgb(83, 83, 83)
     url(../images/vitae-bottle.jpg)
-    center / cover;
+    var(--position) / cover
+    no-repeat;
+
+    animation-name: zoom-in;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*zoom in animation*/
+@keyframes zoom-in {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* change image position if screen is smaller */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero-image {
+        --position: 20% 30%;
+    }
 }
 
 footer > p, h1 {
