@@ -2,7 +2,7 @@ body {
     /*background: url("../images/paper.jpg") no-repeat center center fixed;*/
     background-size: cover;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     margin: 0;
 } 
 
@@ -75,4 +75,96 @@ header {
         --position: 20% 30%;
     }
 }
+
+footer > p, h1 {
+    font-weight: 200px;
+    font-family: 'Edwardian Script ITC' 'Modern No. 20' Bahnschrift;  
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+
+}
+
+/* we cannot set height of the #container if we don't set height of html & body */
+html, body {
+    height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* we cannot detect the height of the browser if we don't have container set */
+#container {
+    min-height: 100%;
+}
+
+/* to get a scroll-bar once we get more content in. */
+#main {
+    overflow: auto; 
+    padding-bottom: 100px;
+}
+
+    footer {
+        background-color: rgba(25, 23, 23, 0.44);
+        color: white;
+        height: 120px;
+        display:flex;
+        align-items: center;
+        font-family:fantasy;
+    }
+    footer > div {
+        height: fit-content;
+    }
+    .inline a{
+        text-decoration: none;
+    }
+    .inline ul {
+        list-style: none;
+    }
+    .inline li {
+        display: inline-flex;
+        text-align: right;
+    }
+    .footainer {
+        display: flex;
+        height: fit-content;
+        width: 100%;
+        align-content: center;
+        justify-items: center;
+    }
+    .maker-list {
+        display: inline-flex;
+        text-align: right;
+    }
+    .makers-name {
+        margin: auto .5rem;
+        text-align: right;
+    }
+    .maker {
+        display: inline-flex;
+        margin: auto 1rem;
+        text-align: right;
+    }
+    svg {
+        width: 50px;
+        border: 2px solid rgb(53, 50, 50);
+        border-radius: 25px;
+        background-color: white;
+    }
+
+    h1 {
+        -webkit-text-stroke: 1px rgb(45, 43, 43);
+    
+        font-family: fantasy; color: whitesmoke;
+    }
+
+    li p {
+        -webkit-text-stroke: 0.5px rgb(48, 45, 45);
+    
+        font-family: fantasy; color: whitesmoke;
+    }
 
