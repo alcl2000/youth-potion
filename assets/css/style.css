@@ -162,7 +162,19 @@ html, body {
 
     form {
         width: 80%;
-        margin: 0 auto;
+        margin-left: 33%;
         margin-bottom: 50px;
+       
+    }
+    .form-text{
+        margin-left: 30%;
+        font-size: 20px;
+        color:black;
+    }
+    form>p{
+        margin-top:10px;
+    }
+    form>label{
+        margin:10px , 0;
     }
 
